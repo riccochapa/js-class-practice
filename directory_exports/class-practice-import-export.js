@@ -1,7 +1,3 @@
-"use strict";
-
-var _classPractice = require("./class-practice.js");
-
 var fee = "";
 var percentage = "";
 var withdraw = "";
