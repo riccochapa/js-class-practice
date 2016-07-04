@@ -1,4 +1,9 @@
-export class BankAccount {
+module.exports = function(name) {
+this.name = name;
+};
+
+class BankAccount {
+
   constructor(name) {
     this.name = name;
   }
@@ -17,7 +22,8 @@ export class BankAccount {
 
 }
 
- export class CheckingAccount extends BankAccount {
+
+class CheckingAccount extends BankAccount {
     processCheck() {
   	 super.processCheck();
       console.log(this.name + ' processed a check.');
@@ -34,7 +40,8 @@ export class BankAccount {
 
   }
 
-  export class SavingsAccount extends BankAccount {
+
+  class SavingsAccount extends BankAccount {
 
     depositMonthlyInterest() {
       super.depositMonthlyInterest();
