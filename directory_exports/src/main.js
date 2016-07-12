@@ -1,9 +1,11 @@
-var b = require("./BankAccount.js");
+var BankAccount = require("./BankAccount.js");
+var CheckingAccount = require("./CheckingAccount.js");
+var SavingsAccount = require("./SavingsAccount.js");
 
-var acc1 = new b("Jimmy Jonas");
-var acc2 = new b('Debbie Boone');
-var acc3 = new b("Tommy Sanss");
+var acc1 = new SavingsAccount("Jimmy Jonas");
+var acc2 = new CheckingAccount('Debbie Boone');
+var acc3 = new BankAccount("Tommy Sanss");
 
-console.log(acc1.name);
-console.log(acc2.name);
+acc1.processFee(222);
+acc2.processCheck(33);
 console.log(acc3.name);
